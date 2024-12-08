@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+             width: 100%;
+             background-color: azure;
+             display: grid;
+             grid-template-columns: repeat(4,1fr);
+        }
+        .cards{
+             background-color: #fff;
+             margin-top: 20px;
+             margin-bottom: 20px;
+             border: 1px solid white;
+             text-align: center;
+             border-radius: 30px;
+             margin-left: 10px;
+        }
+        
+        .cards img{
+            border: 3px solid orangered;
+            padding: 10px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        .cards:hover{
+            background-color: azure;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        let cardsData = [
+                {
+                    "_id": "65298e96145c992e9da611fb",
+                    "image": "https://cdn-icons-png.flaticon.com/128/7856/7856140.png",
+                    "title": "FREE DEMO CLASSES",
+                    "content": "Before enrolling, a free DEMO lesson is provided.",
+                    "__v": 0
+                },
+                {
+                    "_id": "65298f09145c992e9da611fe",
+                    "image": "https://cdn-icons-png.flaticon.com/128/11231/11231532.png",
+                    "title": "JOB ORIENTED COURSES",
+                    "content": "Be Practical offers career-focused training with hand-picked job oriented courses in Bangalore.",
+                    "__v": 0
+                },
+                {
+                    "_id": "65298f32145c992e9da61200",
+                    "image": "https://cdn-icons-png.flaticon.com/128/8911/8911434.png",
+                    "title": "BACKUP CLASSES",
+                    "content": "Missed classes are covered by backup classesBefore enrolling, a free DEMO lesson is provided.",
+                    "__v": 0
+                },
+                {
+                    "_id": "65298f4d145c992e9da61202",
+                    "image": "https://cdn-icons-png.flaticon.com/128/7856/7856140.png",
+                    "title": "FREE TECHNICAL SUPPORT",
+                    "content": "Connect to technical discussion boards for project help.",
+                    "__v": 0
+                },
+                {
+                    "_id": "65298f7a145c992e9da61204",
+                    "image": "https://cdn-icons-png.flaticon.com/128/11231/11231532.png",
+                    "title": "REAL TIME PROJECTS",
+                    "content": "Gain world-class exposure with our real-time projects",
+                    "__v": 0
+                },
+                {
+                    "_id": "65298fad145c992e9da61206",
+                    "image": "https://cdn-icons-png.flaticon.com/128/8911/8911434.png",
+                    "title": "FREE HR SESSIONS",
+                    "content": "Before you join, you receive a complimentary HR session.",
+                    "__v": 0
+                },
+                {
+                    "_id": "65298fcd145c992e9da61208",
+                    "image": "https://cdn-icons-png.flaticon.com/128/8911/8911434.png",
+                    "title": "EVALUATION PROCESS",
+                    "content": "Our HR Team Provides you with Interview Tips",
+                    "__v": 0
+                },
+                {
+                    "_id": "65298fef145c992e9da6120a",
+                    "image": "https://cdn-icons-png.flaticon.com/128/8911/8911434.png",
+                    "title": "INTERVIEW TIPS",
+                    "content": "Dedicated HR to take care of interviews & Job.",
+                    "__v": 0
+                }
+]
+
+
+         document.write(`    
+         <section class="container">
+            <div class="cards">
+                     <img src="${cardsData[0].image}">
+                     <h1>${cardsData[0].title}</h1>
+                     <p>${cardsData[0].content}</p>
+                     <p>${cardsData[0].__v}</p>
+                </div>
+
+                <div class="cards">
+                     <img src="${cardsData[1].image}">
+                     <h1>${cardsData[1].title}</h1>
+                     <p>${cardsData[1].content}</p>
+                     <p>${cardsData[1].__v}</p>
+                </div>
+
+              <div class="cards">
+                     <img src="${cardsData[2].image}">
+                     <h1>${cardsData[2].title}</h1>
+                     <p>${cardsData[2].content}</p>
+                     <p>${cardsData[2].__v}</p>
+                </div>
+
+              <div class="cards">
+                     <img src="${cardsData[3].image}">
+                     <h1>${cardsData[3].title}</h1>
+                     <p>${cardsData[3].content}</p>
+                     <p>${cardsData[3].__v}</p>
+                </div>
+
+               <div class="cards">
+                     <img src="${cardsData[4].image}">
+                     <h1>${cardsData[4].title}</h1>
+                     <p>${cardsData[4].content}</p>
+                     <p>${cardsData[4].__v}</p>
+                </div>
+
+                <div class="cards">
+                     <img src="${cardsData[5].image}">
+                     <h1>${cardsData[5].title}</h1>
+                     <p>${cardsData[5].content}</p>
+                     <p>${cardsData[5].__v}</p>
+                </div>
+
+                <div class="cards">
+                     <img src="${cardsData[6].image}">
+                     <h1>${cardsData[6].title}</h1>
+                     <p>${cardsData[6].content}</p>
+                     <p>${cardsData[6].__v}</p>
+                </div>
+
+                <div class="cards">
+                     <img src="${cardsData[7].image}">
+                     <h1>${cardsData[7].title}</h1>
+                     <p>${cardsData[7].content}</p>
+                     <p>${cardsData[7].__v}</p>
+                </div>
+            </section>
+         `)
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Boolean Datatypes</h1>
+    </center>
+
+    <script>
+        let firstnumber = 100;
+        let secondnumber = 200;
+
+        if(firstnumber>secondnumber){
+            document.write(`<h1>yes the firstnumber id greater than to secondnumber</h1>`)
+        }
+        else{
+            document.write(`<h1>no the firstname is not greater than to secondnumber</h1>`)
+        }
+
+        let isonline = false;
+
+        document.write(`<h1>with value of isonline variable is = ${isonline}</h1>`)
+
+        if(isonline == true){
+            document.write(`<h1 style="color:green">yes your friend is in online</h1>`)
+        }
+        else{
+            document.write(`<h1 style="color:red">No your friend is in offline</h1>`)
+        }
+
+        //to know datatypes of any variable we can use type of keywords or type of method
+        document.write(`<h1>${typeof(isonline)}</h1>`); //boolean
+        document.write(`<h1>${typeof isonline}</h1>`); //boolean
+
+    </script>
+</body>
+</html>

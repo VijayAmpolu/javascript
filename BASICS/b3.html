@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Difference between let and var keywords</h1>
+        <p>If we declare any variables using let keyword that variables we can use with in the block only but when we declare the variable bu using var keyword that variable we can use inside the block or outside the block also</p>
+    </center>
+    <hr>
+
+    <script>
+        var a = 20;
+        var b = 30;
+        var c = 300;
+
+        document.write(`<h1>a =${a}</h1>`)
+        document.write(`<h1>a =${b}</h1>`)
+        document.write(`<h1>a =${c}</h1>`)
+
+        if(a<b){
+            document.write(`<h1> = ${a}</h1>`);
+            var d = 10;
+            let e =100;
+            console.log(d);
+            
+        }
+
+        console.log(d);
+        console.log(e);
+        
+        
+
+    </script>
+</body>
+</html>

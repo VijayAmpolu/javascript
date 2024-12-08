@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> Diffrence between const and var,  Let keywords </h1>
+        <p>if we declare any variable by using var or let keyword we can change thet value anutime anywere but if declare any variable by using const keyword that variable value we can't change in change in entire code thats why we are  calling const keyword variblas are fixed are values </p>
+        <p>the js execution will stop when we get error on any statement next lines will won't execute</p>
+    </center>
+    <hr>
+
+    <script>
+        var a = 10;
+        document.write(`<h1>before change ${a}</h1>`)
+        // if i want change the a variable value we can change
+
+        a = 30;
+        // console.log(a);
+        document.write(`<h1> after changing a = ${a}</h1>`);
+
+        // if i declare any variable using const keyword 
+        const firstnumber = 100;
+        document.write(`<h1>before changing first number = ${firstnumber}</h1>`);
+        
+        //when i change const keyword variable value
+        firstnumber =  200;
+        /*p4.html:27 Uncaught TypeError: Assignment to constant variable.
+        at p4.html:27:21*/
+        
+        document.write(`firstnumber`);
+        console.log(a);
+        
+    </script>
+</body>
+</html>

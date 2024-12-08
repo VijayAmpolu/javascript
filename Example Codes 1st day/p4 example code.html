@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container{
+            padding: 5%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .container .cards img{
+            width: 80%;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 100px 0px 0px 100px; 
+             /* filter: drop-shadow(10px 10px 5px rgb(75, 66, 66)); */
+        }
+        .container .card{
+            padding: 20px;
+        }
+        .container .card p{
+            font-size: 1.2rem;
+        }
+        .container .card h1{
+            font-size: 1.7rem;
+            margin-top: 20px;
+            color: orangered;
+        }
+        .container .card button{
+            font-size: 1.3rem;
+            background-color: white;
+            color: black;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 50px;
+
+        }
+        .container .card button:hover{
+            background-color: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+    <script>
+         var first_p = '<p>Our Portfolio</p>';
+         var first_h1 = '<h1>We specialize in building brands and digital experiences</h1>';
+         var fisrt_btn = '<button>Create account</button>';
+         var first_br= `<br>`
+
+        //second card
+        var second_image = '<img src="https://us.images.westend61.de/0001780075pw/portrait-of-a-business-man-sitting-in-an-office-with-his-colleagues-in-the-background-happy-business-man-working-in-a-co-working-office-JLPSF28798.jpg">'
+       
+
+        // var third_h1 = "<h1>Tomatoes and pesto sauce</h1>";
+        // var third_image = '<img src="https://assets.nicepagecdn.com/11a8ddce/6192674/images/33.png">'
+        // var third_para = '<p>Nulla consequat massa quis enim. Donec pede justo fringilla vel.</p>'
+         
+
+
+      
+        document.write(`
+            <section class="container">
+                <div class="card">
+                ${first_p}
+                ${first_h1}
+
+                ${fisrt_btn}
+                </div>   
+
+                <div class="cards">
+                ${second_image} 
+                </div>
+
+            </section>
+        `)
+    </script>
+</body>
+</html>
